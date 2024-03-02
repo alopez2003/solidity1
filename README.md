@@ -16,7 +16,7 @@ Posteriormente instalamos Hardhat conforme al Github de [Alex Herranz](https://g
 
 ![image](https://github.com/alopez2003/solidity1/assets/67942268/7904da7f-7def-45c4-a79a-fbb60b87d5dd)
 
-Tuvimos que actualizar node.js y npm porque Hardhat no encontró compatibilidad con la versión instalada por Ubuntu
+Tuvimos que actualizar node.js y npm porque Hardhat no encontró compatibilidad con la versión instalada por Ubuntu, me apoyé del artículo de [Karim Budzar de Linux Genie](https://linuxgenie.net/how-can-i-update-my-nodejs-to-the-latest-version-on-ubuntu/)
 
 ![image](https://github.com/alopez2003/solidity1/assets/67942268/b3cbf0bc-acaa-4990-b63d-525ad86917c1)
 
