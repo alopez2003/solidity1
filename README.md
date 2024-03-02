@@ -20,4 +20,8 @@ Tuvimos que actualizar node.js y npm porque Hardhat no encontró compatibilidad 
 
 ![image](https://github.com/alopez2003/solidity1/assets/67942268/b3cbf0bc-acaa-4990-b63d-525ad86917c1)
 
+Instalamos Hardhat
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/d3cba2c1-70ea-4eec-bcfd-e3164a0ce9ec)
+
 
