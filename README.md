@@ -10,3 +10,8 @@ Lo siguiente fue desplegado en un Ubuntu LTS 22.04, lo primero que hice fue inst
 
 ![image](https://github.com/alopez2003/solidity1/assets/67942268/e2516ef8-bb1d-4567-a0ec-0fd30325750b)
 
+Posteriormente instalamos Hardhat conforme al Github de [Alex Herranz](https://github.com/Alexander-Herranz/smart-contract-deployment-public-networks/blob/main/README.md)
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/cb6f00ec-785f-403e-bef5-1214a6490750)
+
+
