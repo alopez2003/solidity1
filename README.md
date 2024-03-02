@@ -1,4 +1,4 @@
-# solidity1
+# Programación de un primer Smart Contract por Alberto López Gutiérrez
 
 Este es mi primer proyecto en Solitidy y tiene mucho tiempo que no programo, así que estoy muy emocionado por esto. Comencemos.
 
