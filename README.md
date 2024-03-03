@@ -40,6 +40,9 @@ Una vez que tenemos saldo en la cuenta, procedemos con la ejecución.
 _Nota: Usualmente los comandos los despliego en un SSH conectado al Ubuntu, sin embargo cada vez que lo intentaba desplegar me marcaba un ConnectionTimeout_
 
 
+Podemos verificar la creación del contrato en la cuenta en Etherscan en la siguiente liga:
+
+https://goerli.etherscan.io/tx/0x6f9f9511fc8d5180796125ac5524bde29d4be3a1f4bd1980add7720d6d5fa425
 
 
 
