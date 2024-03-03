@@ -31,5 +31,15 @@ Se hace la compilación y el clean del código desplegado
 
 Al momento de ejecutar el código nos marcó un error de fondos insuficientes, conseguimos fondos para la cuenta 1 con Address: 0xb62806e9Ae935d616C983374FfC91903C719a5D1
 
+Una vez que tenemos saldo en la cuenta, procedemos con la ejecución.
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/2d6883d8-afed-4a19-a8a3-c024ca8622e7)
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/213c4ffb-22b0-468d-a57a-48ed9e3c3450)
+
+_Nota: Usualmente los comandos los despliego en un SSH conectado al Ubuntu, sin embargo cada vez que lo intentaba desplegar me marcaba un ConnectionTimeout_
+
+
+
 
 
