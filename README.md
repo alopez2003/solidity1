@@ -25,3 +25,11 @@ Instalamos Hardhat
 ![image](https://github.com/alopez2003/solidity1/assets/67942268/d3cba2c1-70ea-4eec-bcfd-e3164a0ce9ec)
 
 
+Se hace la compilación y el clean del código desplegado
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/26545488-80a3-4a3c-bcac-37715797d564)
+
+Al momento de ejecutar el código nos marcó un error de fondos insuficientes, conseguimos fondos para la cuenta 1 con Address: 0xb62806e9Ae935d616C983374FfC91903C719a5D1
+
+
+
