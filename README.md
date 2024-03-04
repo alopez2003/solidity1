@@ -44,5 +44,22 @@ Podemos verificar la creación del contrato en la cuenta en Etherscan en la sigu
 
 https://goerli.etherscan.io/tx/0x6f9f9511fc8d5180796125ac5524bde29d4be3a1f4bd1980add7720d6d5fa425
 
+Hacemos el deploy también en la red de Polygon en la testnet de Mumbai
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/f1f1f5a5-c10e-4e1e-a378-e817f397c3d6)
+
+
+Podemos verificar la creación del contrato en la cuenta de Polyscan en la siguiente liga:
+
+https://mumbai.polygonscan.com/tx/0x25580b3df84079924d12baafa9e9069c6d4f874aad9d5229c87f9925403699c9
+
+Estuve intentando verificar a través del comando verify, sin embargo me marcaba un error.
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/9a9990e1-bf16-47d0-bdb8-42905903b315)
+
+Considerando que tanto en etherscan y en polyscan puedo ver los contratos, seguiré adelante.
+
+
+
 
 
