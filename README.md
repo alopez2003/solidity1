@@ -231,3 +231,5 @@ Con esto dimos respuesta a lo siguiente:
        - Editar un dato de otro Smart Contract (realizado en Polygon Mumbai)
 
 En específico aún no añadimos funciones nuevas, se estarán investigando dichas funciones.
+
+Se anexa el código de Notarization.sol, que fue el mismo que se ocupó para este ejercicio.
