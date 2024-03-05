@@ -63,6 +63,8 @@ Vemos que se estableció el valor "owner" de la información de lectura del cont
 
 ![image](https://github.com/alopez2003/solidity1/assets/67942268/94839ca5-c559-4b32-9b45-e8ed3c43eedb)
 
+### Añadir un dato al Smart Contract
+
 Posteriormente conectamos en el Contrato en el Etherscan de Goerli a Metamask, y vemos ligada nuestra dirección, y damos click en "Write Contract", damos click en "register" y damos un valor, en este caso "PruebaGoerliALG" y posteriormente en Write
 
 ![image](https://github.com/alopez2003/solidity1/assets/67942268/eac5bbcc-2d67-4d66-80c9-62c8eabfa9dd)
@@ -82,6 +84,8 @@ https://goerli.etherscan.io/tx/0x77c39cce79a39052f8015acecdcc5ee80e45ec0512539c6
 Misma que podemos ver reflejada en el contrato
 
 ![image](https://github.com/alopez2003/solidity1/assets/67942268/3362694f-9b1a-4189-9793-67a93fa1fbcd)
+
+### Leer un dato del Smart Contract
 
 Así mismo si damos click en la parte de "Read Contract" y expandemos la parte de "getHashEvidence" y escribimos "PruebaGoerliALG" nos dará el timestamp asignado a la transacción.
 
@@ -104,6 +108,8 @@ Ahora, dentro de la red de Goerli nuevamente, cambiamos de cuenta (Account2), qu
 ![image](https://github.com/alopez2003/solidity1/assets/67942268/4c6b5fd5-329e-4b0e-88cb-d06b395fe614)
 
 Nos dice que hay un error en el contrato y el Gas Fee nos lo establece muy alto, por lo que no podemos ejecutar la transacción.
+
+### Editar un dato del Smart Contract
 
 Cambiamos nuevamente hacia el Account1, donde tenemos el owner, y establecemos un nuevo dueño con la función de "setOwner" hacia el Account2
 
@@ -132,7 +138,7 @@ Pide confirmación
 Y podemos ver la transacción, ahora con el nuevo owner
 
 https://goerli.etherscan.io/tx/0x8a69fa769d0ab2c0fb78da269b629825006824a66c2700de880b1887c12eb916
-
+.
 Esto podemos comprobarlo en la URL del contrato, donde se puede ver que el From ya es diferente (nuevo owner)
 Se anexa nuevamente la liga del contrato
 https://goerli.etherscan.io/address/0x51cb8f44e5644a0e62ee33d26fc7939f7d30d934
@@ -152,6 +158,8 @@ De la misma forma podemos ver que el owner es la direccion 0xb62806e9Ae935d616C9
 
 ![image](https://github.com/alopez2003/solidity1/assets/67942268/5d8bffc5-d702-42d2-bd20-4e3dcd183697)
 
+### Añadir un dato a otro Smart Contract
+
 Si escribimos en el apartado de Write en la función de Register "PruebaPolyALG1"
 
 ![image](https://github.com/alopez2003/solidity1/assets/67942268/3a963906-9e63-472c-b98d-2bb9dad288cc)
@@ -168,44 +176,58 @@ Así mismo vemos que queda registrado en el URL del contrato
 
 ![image](https://github.com/alopez2003/solidity1/assets/67942268/d520d104-9511-4488-ac4f-a1f9b590eb71)
 
+### Editar un dato de otro Smart Contract
 
+Hacemos una reescritura del owner hacia el Account2 con dirección 0x80392D2071c4E1aBBDdD3DBf8eaCa4431081b787 y damos click en Write
 
+![image](https://github.com/alopez2003/solidity1/assets/67942268/19082080-06a8-478f-9768-b9bc7b8fe7a4)
 
+Nos pide confirmación
 
+![image](https://github.com/alopez2003/solidity1/assets/67942268/0ce8fa87-aa4d-49ed-a7fd-cf1c6b593308)
 
+Y vemos la confirmación en la siguiente URL
 
+https://mumbai.polygonscan.com/tx/0xaecf7dbe5f0f132dc17f9b1e3dde8bf79296ba982012535c8769cbb93e020757
 
+Con esto invocamos un Write en la funcion "Register" ahora con el Account2
 
+![image](https://github.com/alopez2003/solidity1/assets/67942268/97c850b4-5f59-468b-ad74-cc90d7430bb2)
 
+Nos pide confirmar
 
+![image](https://github.com/alopez2003/solidity1/assets/67942268/59a1cc78-fb5c-48fd-9adc-94eb403f94ee)
 
+Y queda registrado en la siguiente liga:
 
+https://mumbai.polygonscan.com/tx/0xbd08b887eb294891306a47573bff57162f34002fc6faf8ef5230a2ec3fa8820d
 
+### Leer un dato de otro Smart Contract
 
+Ahora hacemos la consulta en Polygon Mumbai de lo establecido en la función Register desde la parte Read y nos devuelve el timestamp
 
+![image](https://github.com/alopez2003/solidity1/assets/67942268/000b4efa-466c-4577-bca6-3662f072f804)
 
+Buscamos este valor en epochconverter.com y podemos ver que fue creado hace unos momentos
 
+![image](https://github.com/alopez2003/solidity1/assets/67942268/5c02cb8d-bbe6-4fff-baff-0ec579cc9c34)
 
+Agrego nuevamente la dirección del contrato para constatar las operaciones realizadas
 
+https://mumbai.polygonscan.com/address/0x51cb8f44e5644a0e62ee33d26fc7939f7d30d934
 
+Con esto dimos respuesta a lo siguiente:
 
+       - Añadir un dato al Smart Contract (realizado en Goerli)
 
+       - Añadir un dato a otro Smart Contract (realizado en Polygon Mumbai)
 
+       - Leer un dato del Smart Contract (realizado en Goerli)
 
+       - Leer un dato de otro Smart Contract (realizado en Polygon Mumbai)
 
+       - Editar un dato del Smart Contract (realizado en Goerli)
 
+       - Editar un dato de otro Smart Contract (realizado en Polygon Mumbai)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+En específico aún no añadimos funciones nuevas, se estarán investigando dichas funciones.
