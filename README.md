@@ -59,6 +59,152 @@ Estuve intentando verificar a través del comando verify, sin embargo me marcaba
 
 Considerando que tanto en etherscan y en polyscan puedo ver los contratos, seguiré adelante.
 
+Vemos que se estableció el valor "owner" de la información de lectura del contrato con el valor establecido desde un inicio en el smart contract
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/94839ca5-c559-4b32-9b45-e8ed3c43eedb)
+
+Posteriormente conectamos en el Contrato en el Etherscan de Goerli a Metamask, y vemos ligada nuestra dirección, y damos click en "Write Contract", damos click en "register" y damos un valor, en este caso "PruebaGoerliALG" y posteriormente en Write
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/eac5bbcc-2d67-4d66-80c9-62c8eabfa9dd)
+
+Nos sale una ventana de Metamask para confirmar la transacción
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/9270bf23-425f-4fe4-a60e-0d5c7a19bbaa)
+
+Damos click en Confirmar y podemos ver un boton al lado de Write que nos dice "View your transaction"
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/d10b9f27-f82f-47c1-a21f-178968ad37de)
+
+Si damos click al boton, nos llevará a la siguiente liga, que es la verificación de que se ejecutó esa función.
+
+https://goerli.etherscan.io/tx/0x77c39cce79a39052f8015acecdcc5ee80e45ec0512539c63e507a5de72b5ed26
+
+Misma que podemos ver reflejada en el contrato
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/3362694f-9b1a-4189-9793-67a93fa1fbcd)
+
+Así mismo si damos click en la parte de "Read Contract" y expandemos la parte de "getHashEvidence" y escribimos "PruebaGoerliALG" nos dará el timestamp asignado a la transacción.
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/664a8c7a-f860-4032-887d-cad4dd3cd2f4)
+
+Esto si lo vemos en epochconverter.com podremos ver que es reciente su creación.
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/df796658-cf3a-41e3-ab14-8aeed2f98365)
+
+Si cambiamos ahora de la red de Goerli a la de Polygon Mumbai, con la misma dirección con la que se hizo el deploy, y ejecutamos la función de "Register" con un valor "PruebaPolygonALG" sucede lo siguiente:
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/b29fa518-5117-4af0-8dc7-cd073137863d)
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/bef94bc4-ccde-47ab-b436-313aef132628)
+
+No nos deja hacer el cambio puesto que estamos en una red diferente.
+
+Ahora, dentro de la red de Goerli nuevamente, cambiamos de cuenta (Account2), que tiene una dirección "0x80392D2071c4E1aBBDdD3DBf8eaCa4431081b787" y hacemos la prueba con el "Register" ahora con un valor "PruebaGoerliALG3", cambiando previamente la dirección dentro de Goerli Etherscan.
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/4c6b5fd5-329e-4b0e-88cb-d06b395fe614)
+
+Nos dice que hay un error en el contrato y el Gas Fee nos lo establece muy alto, por lo que no podemos ejecutar la transacción.
+
+Cambiamos nuevamente hacia el Account1, donde tenemos el owner, y establecemos un nuevo dueño con la función de "setOwner" hacia el Account2
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/bca62e83-5530-468d-96aa-0f3d3cf8e651)
+
+Pide confirmar la transacción en MetaMask
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/a1b24f64-3475-4b16-91c5-872bae16e6d7)
+
+Y podemos ver que el owner ha sido actualizado
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/1cc95a1e-9cbe-4f66-a022-334e08a4618e)
+
+Así mismo, podemos ver en el contrato que ha sido actualizado el contrato con la función "Set Owner"
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/cc110e7c-eee4-49f5-8b0e-dccf727324b4)
+
+Ahora si volvemos a intentar hacer el Write en la función "Register" con el valor "PruebaGoerliALG4", cambiando previamente la cuenta en MetaMask y actualizando la dirección dentro de Goerli Etherscan
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/def0e8ba-ab5f-4bd4-b698-db889ddf9c97)
+
+Pide confirmación
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/390f3d93-2b17-4b1d-9276-bd07f798a9e9)
+
+Y podemos ver la transacción, ahora con el nuevo owner
+
+https://goerli.etherscan.io/tx/0x8a69fa769d0ab2c0fb78da269b629825006824a66c2700de880b1887c12eb916
+
+Esto podemos comprobarlo en la URL del contrato, donde se puede ver que el From ya es diferente (nuevo owner)
+Se anexa nuevamente la liga del contrato
+https://goerli.etherscan.io/address/0x51cb8f44e5644a0e62ee33d26fc7939f7d30d934
+
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/d098125f-eccb-4346-9b12-2644c901041f)
+
+Viendo ahora la red de Polygon Mumbai, podemos ver que se desplegó el contrato inteligente, en otra red, siendo otro contrato diferente.
+
+https://mumbai.polygonscan.com/address/0xb62806e9Ae935d616C983374FfC91903C719a5D1
+
+Se añade la URL del contrato
+
+https://mumbai.polygonscan.com/address/0x51cb8f44e5644a0e62ee33d26fc7939f7d30d934
+
+De la misma forma podemos ver que el owner es la direccion 0xb62806e9Ae935d616C983374FfC91903C719a5D1
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/5d8bffc5-d702-42d2-bd20-4e3dcd183697)
+
+Si escribimos en el apartado de Write en la función de Register "PruebaPolyALG1"
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/3a963906-9e63-472c-b98d-2bb9dad288cc)
+
+Nos pide confirmar
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/3dd2ef19-4141-48aa-9c08-c579ec923005)
+
+Podemos verificar la transacción en la siguiente liga:
+
+https://mumbai.polygonscan.com/tx/0x2008f04123d8d33f5139a70b557980d88e3d85066117119b16da57cae82f3470
+
+Así mismo vemos que queda registrado en el URL del contrato
+
+![image](https://github.com/alopez2003/solidity1/assets/67942268/d520d104-9511-4488-ac4f-a1f9b590eb71)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
